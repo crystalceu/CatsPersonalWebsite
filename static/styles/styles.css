@@ -1,0 +1,163 @@
+/*.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+}*/
+
+.section {
+    padding: 0.5rem 2rem 1rem 2rem;
+}
+
+.header {
+    height: 166px;
+}
+
+.brand {
+    font-size: 40px;
+}
+
+.items {
+    font-size: 20px;
+}
+
+.section {
+    padding: 0.5rem 2rem 1rem 2rem;
+}
+
+form.find_breed input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+form.find_breed button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #889ab8;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.find_breed button:hover {
+    background: #5b6c87;
+}
+
+.grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: center;
+    -ms-flex-line-pack: start;
+    align-content: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.m-grid_alignBottom {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: center;
+}
+
+.grid-col {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 110%;
+    min-width: 500px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+/*grid-col_1/2@minMd*/
+.txt {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #4d4751;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.m-txt_heavy {
+    font-family: Nexa Heavy,arial,helvetica,sans-serif;
+}
+
+.m-txt_uppercase {
+    text-transform: uppercase;
+}
+
+.u-vr1x {
+    margin-bottom: 5px;
+}
+
+.meterBar {
+    height: 28px;
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #d2d1d3;
+}
+
+.u-isVisuallyHidden, .u-isVisuallyHiddenUnlessFocused:not(:focus):not(:active) {
+    overflow: hidden!important;
+    width: 1px!important;
+    height: 1px!important;
+    margin: -1px!important;
+    border: 0!important;
+    padding: 0!important;
+    position: absolute!important;
+    clip: rect(1px 1px 1px 1px)!important;
+    clip: rect(1px,1px,1px,1px)!important;
+    -webkit-clip-path: rect(1px,1px,1px,1px)!important;
+    clip-path: rect(1px,1px,1px,1px)!important;
+}
+.grid-col_1\/2\@minMd {
+    width: 50%;
+    padding: 5px;
+}
+.meterBar-range {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    border-radius: 20px 0 0 20px;
+    background-color: #6504b5;
+    -webkit-transition: width .4s ease-in-out;
+    -o-transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
+}
+
+.meterBar-range_5\/5 {
+    width: 100%;
+}
+
+.meterBar-range_4\/5 {
+    width: 80%;
+}
+
+.meterBar-range_3\/5 {
+    width: 60%;
+}
+
+.meterBar-range_2\/5 {
+    width: 40%;
+}
+
+.meterBar-range_1\/5 {
+    width: 20%;
+}
