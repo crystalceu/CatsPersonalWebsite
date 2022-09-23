@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type= "text/css" href="{{ url_for('static',filename='styles/styles.css') }}">
+        <title>My family tree</title>
+    </head>
+    <body>
+        <div class="header">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark flex-row fixed-top">
+                <img src="{{ url_for('static', filename='images/logo.svg') }}" width="200">
+                <a class="navbar-brand brand text-muted" href="/">James The Cat</a>
+                <ul class="navbar-nav align-items-center justify-content-between items mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/second">My family tree</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/third">Check your pet's breed</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/fourth">Contact me</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container-fluid">
+            <div class="section d-flex flex-row align-items-center">
+                <div class="p-2">
+                    <h3>This is my big lovely fluffy family! There are my parents, A, B and six kittens, including me. I love them so much!</h3>
+                </div>
+                <div class="p-2">
+                    <img src="{{ url_for('static', filename='images/cat-family.jpeg') }}" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+
+            <div class="section d-flex p-2 justify-content-center">
+                <h3>But my family is too interesting than you could imagine!</h3>
+            </div>
+
+            <div class="section d-flex flex-row justify-content-center">
+                <div class="p-2">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="p-2"><img src="{{ url_for('static', filename='images/granddad1.jpeg') }}" class="img-fluid" style="max-height: 400px" alt="Responsive image"></div>
+                        <div class="p-2"><h3>My fathers parents</h3></div>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="p-2"><img src="{{ url_for('static', filename='images/granddad2.jpeg') }}" class="img-fluid" style="max-height: 400px" alt="Responsive image"></div>
+                        <div class="p-2"><h3>My mothers parents</h3></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section d-flex flex-row justify-content-center">
+                <div class="p-2">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="p-2"><img src="{{ url_for('static', filename='images/father.jpeg') }}" class="img-fluid" style="max-height: 400px" alt="Responsive image"></div>
+                        <div class="p-2"><h3>My father MILO</h3></div>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="p-2"><img src="{{ url_for('static', filename='images/mother.jpeg') }}" class="img-fluid" style="max-height: 400px" alt="Responsive image"></div>
+                        <div class="p-2"><h3>My mother LUNA</h3></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section d-flex flex-row justify-content-center">
+            <div class="p-2">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="p-2"><img src="{{ url_for('static', filename='images/sib1.jpeg') }}" class="img-fluid" style="max-height: 200px" alt="Responsive image"></div>
+                    <div class="p-2 text-center"><h3>My sib OLIVER</h3></div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="p-2"><img src="{{ url_for('static', filename='images/sib2.jpeg') }}" class="img-fluid" style="max-height: 200px" alt="Responsive image"></div>
+                    <div class="p-2 text-center"><h3>My sib LOKI</h3></div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="p-2"><img src="{{ url_for('static', filename='images/sib3.jpeg') }}" class="img-fluid" style="max-height: 200px" alt="Responsive image"></div>
+                    <div class="p-2 text-center"><h3>My sib BELLA</h3></div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="p-2"><img src="{{ url_for('static', filename='images/sib4.jpeg') }}" class="img-fluid" style="max-height: 200px" alt="Responsive image"></div>
+                    <div class="p-2 text-center"><h3>My sib LUCY</h3></div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="p-2"><img src="{{ url_for('static', filename='images/sib5.jpeg') }}" class="img-fluid" style="max-height: 200px" alt="Responsive image"></div>
+                    <div class="p-2 text-center"><h3>My sib SIMON</h3></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <footer class="text-muted text-center bg-dark fixed-bottom">
+            James The Cat &#9734; Kittens Street &#9734; Catsville, Catland 12345<br>
+            Copyright &copy; 2022 All Right Reserved
+        </footer>
+    </body>
+</html>
